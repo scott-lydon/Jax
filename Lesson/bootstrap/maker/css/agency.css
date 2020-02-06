@@ -135,19 +135,17 @@ img::-moz-selection {
   font-weight: 700;
 }
 
-:root {
-  --btn-primary-height: 36px;
-  --btn-primary-font: 20px;
-}
-
 .btn-xl {
-  font-size: var(--btn-primary-font);
-  padding: calc(calc(var(--btn-primary-height) - var(--btn-primary-font)) / 2);
+  font-size: 18px;
+  padding: 15px 30px;
+  /* margin-left: 20px; */
 }
 
 .btn-primary {
-  border-radius: calc(var(--btn-primary-height) / 2);
-  height:  var(--btn-primary-height);
+  --height: 26px;
+  float: left;
+  border-radius: var(--height);
+  height: calc(var(--height) * 2);
   background-color: var(--headerButtonColor);
   border-color: var(--headerButtonColor);
 }
