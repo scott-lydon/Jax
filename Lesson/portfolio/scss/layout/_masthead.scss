@@ -1,0 +1,41 @@
+.masthead {
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
+  .masthead-heading {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+  .masthead-subheading {
+    font-size: 1.25rem;
+  }
+  .masthead-avatar {
+    width: 15rem;
+    display: inline;
+    margin: 0 auto;
+    margin-left: -25%; // centers the image
+    height: 100%;
+  }
+}
+
+.image-cropper {
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+@include media-breakpoint-up(lg) {
+  .masthead {
+    padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem;
+    .masthead-heading {
+      font-size: 4rem;
+      line-height: 3.5rem;
+    }
+    .masthead-subheading {
+      font-size: 1.5rem;
+    }
+
+  }
+}
